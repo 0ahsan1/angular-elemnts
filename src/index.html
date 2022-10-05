@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularElemnts</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <ngsd-button button-Label="click me">
+    <span slot="title">
+      <h1>
+        TITLE
+      </h1>
+    </span>
+  </ngsd-button>
+  <script>
+    const comp = document.querySelector('ngsd-button')
+    comp.addEventListener('customEvent', event => {
+      alert(event.detail)
+    })
+  </script>
+</body>
+</html>
